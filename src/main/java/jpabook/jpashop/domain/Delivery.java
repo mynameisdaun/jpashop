@@ -10,7 +10,7 @@ import javax.persistence.*;
 public class Delivery {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "delivery_id")
     private Long id;
 
